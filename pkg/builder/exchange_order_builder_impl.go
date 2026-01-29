@@ -64,6 +64,7 @@ func (e *ExchangeOrderBuilderImpl) BuildSignedOrder(s Signer, orderData *model.O
 	return &model.SignedOrder{
 		Order:     *order,
 		Signature: signature,
+		OrderHash: orderHash,
 	}, nil
 }
 

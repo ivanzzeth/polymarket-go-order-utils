@@ -94,4 +94,7 @@ type SignedOrder struct {
 
 	// The order signature
 	Signature OrderSignature
+
+	// The order hash, computed from the order and exchange address
+	OrderHash OrderHash
 }
